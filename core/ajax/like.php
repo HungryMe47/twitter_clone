@@ -55,9 +55,9 @@
 		</div>` ;
     }
 
-    if(isset($_POST['file'])){
-        $getFromT->uploadImage($_POST['files']);
-    } 
+//    if(isset($_POST['file'])){
+//        $getFromT->uploadImage($_POST['files']);
+//    }
 
 
 ?>
