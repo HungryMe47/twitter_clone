@@ -2,11 +2,11 @@
 	include '../init.php'; 
 	
     if(isset($_POST['like']) && !empty($_POST['like'])){
-    	$user_id  = $_SESSION['user_id'];
+    	$user_id  = $_SESSION['user_id']; // the user id of the banda jisne like kra
 		$tweet_id = $_POST['like'];
 		
         $for_user = Tweet::getData($tweet_id)->user_id;
-		$get_id   = $_POST['user_id'];
+		$get_id   = $_POST['user_id']; // The user id of the banda jisne yarn kra
 		date_default_timezone_set("Africa/Cairo");
 		if($for_user != $user_id) {
 			$data = [

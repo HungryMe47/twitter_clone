@@ -22,7 +22,7 @@ use validation\Validator;
         $v->rules('email' , $email , ['required' , 'email']);
         $v->rules('password' , $password , ['required' , 'string']);
         $errors = $v->errors;
-        if($errors == []) {
+        if($errors == []) { // Errors Nahi aaye
             User::login($email , $password);
          if(User::login($email , $password) === false ) {
           // $errors = 'the email or password is not correct';/
